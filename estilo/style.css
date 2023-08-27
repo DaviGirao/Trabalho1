@@ -123,6 +123,8 @@ main ul {
 #final {
     font-size: 0.9em;
     text-align: right ;
+    margin: 0px;
+    padding: 0px;
 }
 
 a {
