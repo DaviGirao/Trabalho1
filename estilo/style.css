@@ -121,16 +121,26 @@ main ul {
 }
 
 #final {
-    font-size: 1.2em;
+    font-size: 0.9em;
+    text-align: right ;
 }
 
-#final > a {
+a {
     text-decoration: none;
-    color: rgb(51, 118, 141);
+    color: rgb(41, 103, 108);
+    font-weight: 400;
 }
 
-#final > a:hover {
+a:hover {
     text-decoration: underline;
+}
+
+footer {
+    background-color: var(--cor3);
+    color: white;
+    font: 300;
+    text-align: center;
+    box-shadow: inset 0px 0px 50px 20px rgba(0, 0, 0, 0.200);
 }
 
 
