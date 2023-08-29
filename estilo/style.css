@@ -52,6 +52,7 @@ header nav {
 }
 
 header nav a {
+    font-size: 99%;
     display: inline-block;
     margin-top: 8px;
     padding: 5.5px;
