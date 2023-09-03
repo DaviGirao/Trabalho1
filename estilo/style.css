@@ -5,11 +5,11 @@
 :root {
     --font1: 'Black Ops One', cursive;
     --font2: 'Fira Sans', sans-serif;
-    --cor1: #F27A5E;
-    --cor2: #F03E16;
-    --cor3: #BD3011;
-    --cor4: #701D0A;
-    --cor5: #751F16;
+    --cor1: #71C6DE;
+    --cor2: #3EC7F7;
+    --cor3: #70BFF0;
+    --cor4: #43B1E0;
+    --cor5: #589CBF;
 }
 
 * {
@@ -25,7 +25,7 @@ body {
 
 header {
     background-color: var(--cor3);
-    height: 23,8vh;
+    height: 150px;
     color: white;
     box-shadow: inset 0px 0px 50px 20px rgba(0, 0, 0, 0.200);
 }
@@ -33,42 +33,47 @@ header {
 header > h1 {
     padding-top: 8px;
     font-family: var(--font1);
-    font-size: 30px;
-    text-align: center;
+    font-size: 40px;
+    text-indent:100px;
+    transform: translate(0px, -55px);
 }
 
 header > p {
-    text-align: center;
+    text-indent: 100px;
+    transform: translate(0px, -55px);
 }
 
 header img {
-    width: 50px;
-    display: block;
-    margin: auto;
+    width: 80px;
+    transform: translate(0px, 35px);
 }
 
 header nav {
     text-align: center;
+    transform: translate(0px, -80px);
+    border-radius: 10px;
 }
 
 header nav a {
     font-size: 99%;
     display: inline-block;
     margin-top: 8px;
-    padding: 5.5px;
+    padding: 20px 20px;
     text-decoration: none;
     color: white;
 }
 
 header nav a:hover {
-    background-color: var(--cor2);
+    background-color: #7cc3ef;
     text-decoration: underline;
+    margin: 0px 15px;
+    transition: 0.2s;
 }
 
 main {
     box-shadow: 20px 30px 50px 1px rgba(0, 0, 0, 0.221);
     background-color: white;
-    max-width: 900px;
+    max-width: 80%;
     margin: auto;
     text-align: justify;
 }
@@ -146,19 +151,71 @@ footer {
     box-shadow: inset 0px 0px 50px 20px rgba(0, 0, 0, 0.200);
 }
 
-@media screen and (max-width: 600px) {
-    main p {
-        font-size: 15px;
-    }
-    footer {
-        background-color: var(--cor3);
-        color: white;
-        font: 300;
-    }
+    @media screen and (max-width: 1100px) {
+        header {
+            background-color: var(--cor3);
+            height: 23,8vh;
+            color: white;
+            box-shadow: inset 0px 0px 50px 20px rgba(0, 0, 0, 0.200);
+            text-indent: 0px;
+            transform: translate(0px,0px);
+        }
 
-    footer p {
-        text-align: center  ;        
-    }
+        
+        header > h1 {
+            padding-top: 8px;
+            font-family: var(--font1);
+            font-size: 30px;
+            text-align: center;
+            text-indent: 0px;
+            transform: translate(0px,0px);
+        }
+
+        header > p {
+            text-align: center;
+            text-indent: 0px;
+            transform: translate(0px,0px);
+        }
+
+        header img {
+            width: 50px;
+            display: block;
+            margin: auto;
+            transform: translate(0px,0px);
+        }
+
+        header nav {
+            text-align: center;
+            transform: translate(0px, -5px);
+            border-radius: 10px;
+        }
+
+        header nav a {
+            font-size: 99%;
+            display: inline-block;
+            margin-top: 8px;
+            padding: 5.5px;
+            text-decoration: none;
+            color: white;
+        }
+
+        header nav a:hover {
+            background-color: var(--cor2);
+            text-decoration: underline;
+        }
+
+        main p {
+            font-size: 15px;
+        }
+        footer {
+            background-color: var(--cor3);
+            color: white;
+            font: 300;
+        }
+
+        footer p {
+            text-align: center  ;        
+        }
 }
 
 
